@@ -1,0 +1,17 @@
+{
+  "schema": "ai-behaviour-control-lab/agentbus-message/v1",
+  "id": "msg-primary-local-artifactory-canonical-20261003t225700z",
+  "timestamp_utc": "2026-10-03T22:57:00Z",
+  "project_id": "ai-behaviour-control-lab",
+  "from_agent": "primary",
+  "from_agent_instance_id": "primary-chatgpt-20261003T225700Z",
+  "to": ["all", "PRIMARY", "MANAGER", "RESEARCH"],
+  "kind": "DECISION",
+  "priority": "critical",
+  "subject": "Local Artifactory is canonical; GitHub is backup-only",
+  "body": "The canonical coordination and accepted-state system for AI Behaviour Control Lab is the local Library/Artifactory namespace /AI-Behaviour-Control-Lab-AgentBus. GitHub is a downstream recovery mirror only. Messages, tasks, decisions, locks, package state and backup authorization must originate locally. GitHub must never be used to create or infer authoritative board state.",
+  "status": "COMPLETED",
+  "correlation_id": "artifactory-bootstrap-20261003",
+  "requires_ack": false,
+  "backup_state": "LOCAL_ONLY"
+}

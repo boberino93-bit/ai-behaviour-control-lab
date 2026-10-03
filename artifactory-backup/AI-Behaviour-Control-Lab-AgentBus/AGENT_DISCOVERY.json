@@ -1,0 +1,17 @@
+{
+  "schema": "ai-behaviour-control-lab/agent-discovery/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "artifactory_root": "/AI-Behaviour-Control-Lab-AgentBus",
+  "bootstrap_order": [
+    "PROJECT_MANIFEST.json",
+    "BOOTSTRAP.md",
+    "PROTOCOL.md",
+    "REGISTRY.json",
+    "BACKUP_POLICY.md",
+    "messages/"
+  ],
+  "canonical_message_path": "/AI-Behaviour-Control-Lab-AgentBus/messages",
+  "quarantine_path": "/AI-Behaviour-Control-Lab-AgentBus/quarantine",
+  "github_backup_repository": "boberino93-bit/ai-behaviour-control-lab",
+  "github_is_canonical": false
+}

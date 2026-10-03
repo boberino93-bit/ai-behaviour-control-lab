@@ -1,0 +1,29 @@
+{
+  "schema": "ai-behaviour-control-lab/agent-registry/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "canonical_root": "/AI-Behaviour-Control-Lab-AgentBus",
+  "agents": [
+    {
+      "logical_agent_id": "primary",
+      "role": "PRIMARY",
+      "authority": "ORCHESTRATOR",
+      "status": "ACTIVE",
+      "capabilities": ["read_project_state", "publish_message", "integrate_accepted_state", "coordinate_agents", "review_release_coherence", "authorize_backup"]
+    },
+    {
+      "logical_agent_id": "manager",
+      "role": "MANAGER",
+      "authority": "REVIEWER",
+      "status": "AVAILABLE",
+      "capabilities": ["read_project_state", "publish_message", "review_change", "coordinate_bounded_work"]
+    },
+    {
+      "logical_agent_id": "research",
+      "role": "RESEARCH",
+      "authority": "SPECIALIST",
+      "status": "AVAILABLE",
+      "capabilities": ["read_project_state", "publish_message", "publish_research_artifact"]
+    }
+  ],
+  "cross_project_exchange": "DENY_BY_DEFAULT"
+}

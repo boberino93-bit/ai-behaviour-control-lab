@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Behaviour Control Lab durable project message",
+  "type": "object",
+  "required": ["schema", "id", "timestamp_utc", "project_id", "from_agent", "from_agent_instance_id", "to", "kind", "priority", "subject", "body", "status", "correlation_id", "requires_ack", "backup_state"],
+  "properties": {
+    "schema": {"const": "ai-behaviour-control-lab/agentbus-message/v1"},
+    "project_id": {"const": "ai-behaviour-control-lab"},
+    "id": {"type": "string", "minLength": 1},
+    "timestamp_utc": {"type": "string", "minLength": 1},
+    "from_agent": {"type": "string", "minLength": 1},
+    "from_agent_instance_id": {"type": "string", "minLength": 1},
+    "to": {"type": "array", "items": {"type": "string"}},
+    "kind": {"enum": ["CLAIM", "FINDING", "BLOCKER", "REQUEST", "REVIEW", "DECISION", "HANDOFF", "SUPERSESSION", "BACKUP_RECEIPT", "SERVICE_CHECKPOINT"]},
+    "priority": {"enum": ["normal", "high", "critical"]},
+    "status": {"enum": ["RECEIVED", "ACCEPTED", "STARTED", "COMPLETED", "FAILED", "REJECTED", "QUARANTINED"]},
+    "backup_state": {"enum": ["LOCAL_ONLY", "BACKUP_PENDING", "BACKED_UP", "BACKUP_FAILED"]}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "ai-behaviour-control-lab/backup-receipt/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "receipt_id": "backup-receipt-20261003T230900Z-9b5ce7ec",
+  "timestamp_utc": "2026-10-03T23:09:00Z",
+  "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus",
+  "canonical_source_system": "LOCAL_ARTIFACTORY_LIBRARY",
+  "destination": "GitHub",
+  "repository": "boberino93-bit/ai-behaviour-control-lab",
+  "git_commit_sha": "9b5ce7ec243c2bdce2759da4d7c553dfb07057d1",
+  "git_tree_sha": "a32022799a437070d0418f6ca9eb679667c7da0a",
+  "message_cutoff_utc": "2026-10-03T23:07:10Z",
+  "message_cutoff_id": "msg-primary-package-set-v0.1.0-accepted-20261003t230710z",
+  "package_set_version": "0.1.0",
+  "protocol_version": "1.0.0",
+  "github_snapshot_path": "artifactory-backup/snapshots/AI-Behaviour-Control-Lab-AgentBus-snapshot-20261003T230710Z.zip",
+  "snapshot_sha256": "d79e626fda3f8957617eab0a8d7e14973757bdf847242eb728f18540fa6a06bc",
+  "backup_manifest": "/AI-Behaviour-Control-Lab-AgentBus/backup/manifests/20261003T230710Z.json",
+  "verification": {"local_state_readback":"PASS","role_package_library_hash_readback":"PASS","git_branch_updated":"PASS","latest_backup_pointer_readback":"PASS","github_is_canonical":false},
+  "status": "BACKED_UP",
+  "notes": "Recovery snapshot only. The local Artifactory remains authoritative; this receipt is local post-backup evidence and belongs to the next backup cutoff."
+}

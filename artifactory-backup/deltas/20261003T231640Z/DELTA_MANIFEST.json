@@ -1,0 +1,25 @@
+{
+  "schema": "ai-behaviour-control-lab/github-backup-delta/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus",
+  "github_role": "BACKUP_ONLY",
+  "created_at_utc": "2026-10-03T23:18:00Z",
+  "base_full_backup": {
+    "git_commit_sha": "9b5ce7ec243c2bdce2759da4d7c553dfb07057d1",
+    "message_cutoff_utc": "2026-10-03T23:07:10Z",
+    "snapshot_path": "artifactory-backup/snapshots/AI-Behaviour-Control-Lab-AgentBus-snapshot-20261003T230710Z.zip",
+    "snapshot_sha256": "d79e626fda3f8957617eab0a8d7e14973757bdf847242eb728f18540fa6a06bc"
+  },
+  "delta_cutoff_utc": "2026-10-03T23:16:40Z",
+  "delta_cutoff_message_id": "msg-primary-adversarial-validation-pass-20261003t231640z",
+  "files": [
+    {"path":"backup/receipts/20261003T230900Z__github-backup__9b5ce7ec.json","size_bytes":1457,"sha256":"1b5c09c80d8304d2e3d03c84551ada9275d1cb13171df089658e8b6d35399518"},
+    {"path":"messages/20261003T231000Z__primary__all__CLAIM-adversarial-validation.json","size_bytes":965,"sha256":"0234d7e74729589214ee062f1c1ffa0df565d53ea326260ac2e053af6a049c16"},
+    {"path":"validators/validate_coordination_state.py","size_bytes":4590,"sha256":"2071b098472866540b9bba4b362089534061a77c6a11e71fe0127c409b112460"},
+    {"path":"validators/ADVERSARIAL_VALIDATION_RESULT.md","size_bytes":1206,"sha256":"62eee660b46a16234a141a6e9f96d0f488423014d39f6ce5ef910b65b1245dc6"},
+    {"path":"tasks/task-adversarial-coordination-validation-v1.json","size_bytes":909,"sha256":"d128efbf3d3dbe766461aa1c20a0a8c296a8c9ae2ebb813d13ec7ad32c1af5b0"},
+    {"path":"messages/20261003T231640Z__primary__all__FINDING-adversarial-validation-pass.json","size_bytes":1424,"sha256":"f0d4f07bbafe40f103c815019850824eae4ed45d6b9dce8b8a07bb8d8aaf94b6"}
+  ],
+  "reconstruction": "Restore the base full snapshot, then overlay these delta files at the same Artifactory-relative paths. Verify each SHA-256 before accepting restored state.",
+  "transport_note": "GitHub delta contains only state created after the 23:07:10Z full snapshot. The current local full BACKUP_MANIFEST remains local backup-generation metadata and is not required to reconstruct canonical project state."
+}

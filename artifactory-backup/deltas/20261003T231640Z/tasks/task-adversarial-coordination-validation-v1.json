@@ -1,0 +1,20 @@
+{
+  "schema": "ai-behaviour-control-lab/task/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "task_id": "task-adversarial-coordination-validation-v1",
+  "parent_task_id": null,
+  "created_at_utc": "2026-10-03T23:10:00Z",
+  "updated_at_utc": "2026-10-03T23:16:40Z",
+  "creator_agent_id": "primary",
+  "owner_agent_id": "primary",
+  "owner_role": "PRIMARY",
+  "status": "COMPLETED",
+  "title": "Adversarially validate research coordination state",
+  "scope": "Test fail-closed project identity, duplicate message, stale lease, package drift, role mismatch, and foreign-package behavior against the current local coordination baseline.",
+  "correlation_id": "adversarial-validation-20261003",
+  "lease_id": null,
+  "evidence_refs": [
+    "/AI-Behaviour-Control-Lab-AgentBus/validators/validate_coordination_state.py",
+    "/AI-Behaviour-Control-Lab-AgentBus/validators/ADVERSARIAL_VALIDATION_RESULT.md"
+  ]
+}

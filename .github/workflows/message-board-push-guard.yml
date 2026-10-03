@@ -1,0 +1,49 @@
+name: Message Board Sync Guard
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-message-board-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify every push or PR includes message-board state
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          set -euo pipefail
+
+          if [[ "$EVENT_NAME" == "pull_request" ]]; then
+            git fetch origin "$BASE_REF" --depth=1
+            CHANGED="$(git diff --name-only "origin/$BASE_REF"...HEAD)"
+          else
+            if [[ -n "${BEFORE_SHA:-}" && ! "$BEFORE_SHA" =~ ^0+$ ]]; then
+              CHANGED="$(git diff --name-only "$BEFORE_SHA" "$GITHUB_SHA")"
+            elif git rev-parse HEAD^ >/dev/null 2>&1; then
+              CHANGED="$(git diff --name-only HEAD^ HEAD)"
+            else
+              CHANGED="$(git ls-tree -r --name-only HEAD)"
+            fi
+          fi
+
+          echo "Changed paths:"
+          printf '%s\n' "$CHANGED"
+
+          if ! grep -qE '^artifactory/message_board/' <<<"$CHANGED"; then
+            echo "::error::Message-board synchronization missing. Every project push/PR must include an update under artifactory/message_board/."
+            exit 1
+          fi
+
+          echo "Message-board synchronization present."

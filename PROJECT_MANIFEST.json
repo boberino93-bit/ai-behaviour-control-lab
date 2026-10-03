@@ -1,0 +1,46 @@
+{
+  "schema": "org-agent-mesh/project-manifest/v1",
+  "framework_version": "1.3.0-alpha.1",
+  "protocol_version": "2.2.0-alpha.1",
+  "project_id": "ai-behaviour-control-lab",
+  "project_name": "AI Behaviour Control Lab",
+  "project_slug": "ai-behaviour-control-lab",
+  "repository_identity": "boberino93-bit/ai-behaviour-control-lab",
+  "project_type": "RESEARCH_PROJECT",
+  "organization_domain": "AI behaviour and control research",
+  "authoritative_sources": [
+    "this repository after accepted integration",
+    "project-local Artifactory message board"
+  ],
+  "external_instruction_sources": [
+    {
+      "repository": "boberino93-bit/intercommunicationsenhancements",
+      "revision": "fcd7f3cff40d3f3628dfebbfc30eeb3cdb0dd74e",
+      "access": "READ_ONLY",
+      "purpose": "Organization Agent Mesh primary-agent communication, isolation, and release-coherence instructions"
+    }
+  ],
+  "integration_authority": "ORCHESTRATOR",
+  "review_authority": "REVIEWER",
+  "agent_roles": [
+    {"role_id": "primary", "deployment_role": "PRIMARY", "authority_tier": "ORCHESTRATOR"},
+    {"role_id": "manager", "deployment_role": "MANAGER", "authority_tier": "REVIEWER"},
+    {"role_id": "research", "deployment_role": "RESEARCH", "authority_tier": "SPECIALIST"}
+  ],
+  "artifact_policy": {
+    "immutability": true,
+    "canonical_detail_home": "artifactory/message_board/messages",
+    "project_scoped": true
+  },
+  "communication_policy": {
+    "append_only": true,
+    "supersession_not_deletion": true,
+    "messages_point_to_evidence": true,
+    "project_identity_required": true,
+    "cross_project_default": "DENY",
+    "message_board_root": "artifactory/message_board",
+    "github_sync_required": true,
+    "github_sync_mode": "BOARD_UPDATE_INCLUDED_WITH_PROJECT_PUSH",
+    "canonical_persistence_before_external_delivery": true
+  }
+}

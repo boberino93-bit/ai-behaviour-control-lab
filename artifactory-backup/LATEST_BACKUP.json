@@ -1,0 +1,15 @@
+{
+  "schema": "ai-behaviour-control-lab/github-backup-pointer/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus",
+  "github_role": "BACKUP_ONLY",
+  "snapshot_created_at_utc": "2026-10-03T23:07:30Z",
+  "message_cutoff_utc": "2026-10-03T23:07:10Z",
+  "message_cutoff_id": "msg-primary-package-set-v0.1.0-accepted-20261003t230710z",
+  "protocol_version": "1.0.0",
+  "package_set_version": "0.1.0",
+  "snapshot_path": "artifactory-backup/snapshots/AI-Behaviour-Control-Lab-AgentBus-snapshot-20261003T230710Z.zip",
+  "snapshot_sha256": "d79e626fda3f8957617eab0a8d7e14973757bdf847242eb728f18540fa6a06bc",
+  "backup_manifest_inside_snapshot": "BACKUP_MANIFEST.json",
+  "note": "Recovery backup only. Local Artifactory remains authoritative."
+}

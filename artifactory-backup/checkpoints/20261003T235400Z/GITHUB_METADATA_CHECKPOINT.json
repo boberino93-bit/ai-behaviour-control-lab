@@ -1,0 +1,20 @@
+{
+  "schema": "ai-behaviour-control-lab/github-metadata-checkpoint/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "created_at_utc": "2026-10-03T23:54:00Z",
+  "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus",
+  "github_role": "BACKUP_ONLY",
+  "checkpoint_kind": "PARTIAL_METADATA_BACKUP",
+  "message_cutoff_utc": "2026-10-03T23:49:00Z",
+  "message_cutoff_id": "msg-primary-unified-v0.3.0-composition-pass-20261003t234900z",
+  "current_package_set": "0.2.1",
+  "candidate_package_set": {"version": "0.3.0", "status": "PENDING_MANAGER_REVIEW"},
+  "local_full_checkpoint": {
+    "archive_name": "AI-Behaviour-Control-Lab-recovery-checkpoint-20261003T235200Z.zip",
+    "archive_sha256": "711322a911683489a39caf875f5b0b40539ba2c42511cb4ec664bed996321bd4",
+    "manifest_sha256": "8d7e2bd25172c3ba91e718161978a52c443f19b99768f4c2bfbdba63d021870b",
+    "file_count": 37,
+    "github_binary_replication": "PENDING_CONNECTOR_BINARY_UPLOAD_CAPABILITY"
+  },
+  "recovery_warning": "This GitHub checkpoint backs up metadata and durable messages only. It MUST NOT be represented as a complete binary recovery snapshot. Local Artifactory remains canonical."
+}

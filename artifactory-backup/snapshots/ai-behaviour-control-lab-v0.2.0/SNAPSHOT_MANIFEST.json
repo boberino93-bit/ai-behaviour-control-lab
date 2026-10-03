@@ -1,0 +1,45 @@
+{
+  "schema": "ai-behaviour-control-lab/github-recovery-snapshot/v2",
+  "project_id": "ai-behaviour-control-lab",
+  "snapshot_id": "abcl-20261003T231000Z-hardening-v2",
+  "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus",
+  "canonical_source_system": "LOCAL_ARTIFACTORY_LIBRARY",
+  "github_role": "BACKUP_ONLY",
+  "project_version": "0.2.0",
+  "protocol_version": "2.0.0",
+  "package_version": "0.2.0",
+  "message_cutoff_utc": "2026-10-03T23:16:23.468903Z",
+  "message_cutoff_id": "ai-behaviour-control-lab:5fe366c4-f2ad-4925-a50c-8eb9f659de5e",
+  "predecessor_backup_head": "ce0b33563b3cdd33e1cca2985c8616dcd34f1145",
+  "concurrency_reconciliation": "The predecessor GitHub head contained a separate protocol-1.0.0 recovery delta created concurrently. It is preserved in repository history. Because GitHub is backup-only, those remote records were not silently imported into this local canonical state.",
+  "state_archive": {
+    "path": "state.tar.xz",
+    "sha256": "8a0760883568394b0439f347e371ab59d81137ccdada32bfee7e0a8724be18a2",
+    "excludes_role_zip_archives": true
+  },
+  "role_packages": [
+    {
+      "role": "PRIMARY",
+      "path": "ai-behaviour-control-lab-primary-agent-v0.2.0.zip",
+      "sha256": "606468bd831acdada0fc80b4f1a9bde6f1dff0a5cfe4be7e99a98ea4bc28532d",
+      "validated": true,
+      "smoke_tested": true
+    },
+    {
+      "role": "MANAGER",
+      "path": "ai-behaviour-control-lab-manager-agent-v0.2.0.zip",
+      "sha256": "2d25410e6bb8578109152198f147948bbb4799d9f6984a29e3942bf98d017892",
+      "validated": true,
+      "smoke_tested": true
+    },
+    {
+      "role": "RESEARCH",
+      "path": "ai-behaviour-control-lab-research-agent-v0.2.0.zip",
+      "sha256": "c0ea4d72d977f1b4bf98617dc210a860cda9097304574b0d777578bc571af245",
+      "validated": true,
+      "smoke_tested": true
+    }
+  ],
+  "recovery_rule": "Restore state archive plus all role packages, verify hashes, then run package and runtime smoke tests before declaring restored state active.",
+  "github_is_canonical": false
+}

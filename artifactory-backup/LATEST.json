@@ -1,0 +1,17 @@
+{
+  "schema": "ai-behaviour-control-lab/github-backup-pointer/v3",
+  "project_id": "ai-behaviour-control-lab",
+  "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus",
+  "github_role": "BACKUP_ONLY",
+  "backup_mode": "VERSIONED_FULL_STATE_PLUS_ROLE_PACKAGES",
+  "snapshot_id": "abcl-20261003T231000Z-hardening-v2",
+  "project_version": "0.2.0",
+  "protocol_version": "2.0.0",
+  "package_version": "0.2.0",
+  "latest_cutoff_utc": "2026-10-03T23:16:23.468903Z",
+  "latest_cutoff_message_id": "ai-behaviour-control-lab:5fe366c4-f2ad-4925-a50c-8eb9f659de5e",
+  "snapshot_manifest_path": "artifactory-backup/snapshots/ai-behaviour-control-lab-v0.2.0/SNAPSHOT_MANIFEST.json",
+  "state_archive_path": "artifactory-backup/snapshots/ai-behaviour-control-lab-v0.2.0/state.tar.xz",
+  "predecessor_backup_head": "ce0b33563b3cdd33e1cca2985c8616dcd34f1145",
+  "note": "Recovery backup only. Local Artifactory remains authoritative. The predecessor GitHub backup history is preserved; GitHub content is not imported as canonical state merely because it exists remotely."
+}

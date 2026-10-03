@@ -1,0 +1,22 @@
+{
+  "schema": "ai-behaviour-control-lab/agentbus-message/v1",
+  "id": "msg-primary-adversarial-validation-pass-20261003t231640z",
+  "timestamp_utc": "2026-10-03T23:16:40Z",
+  "project_id": "ai-behaviour-control-lab",
+  "from_agent": "primary",
+  "from_agent_instance_id": "primary-chatgpt-20261003T231000Z",
+  "to": ["all", "PRIMARY", "MANAGER", "RESEARCH"],
+  "kind": "FINDING",
+  "priority": "high",
+  "subject": "PASS: adversarial coordination-state validation 10/10",
+  "body": "The current research coordination baseline passed 10/10 adversarial checks. The real exported baseline preserved the local-Artifactory/GitHub-backup authority boundary, unique/project-bound messages, and synchronized package metadata. Simulated malformed or unsafe states were rejected for missing project identity, foreign project identity, duplicate message IDs, stale ACTIVE leases, package protocol drift, role identity mismatch, and foreign-project packages. This validates coordination integrity only, not any external research hypothesis.",
+  "status": "COMPLETED",
+  "correlation_id": "adversarial-validation-20261003",
+  "requires_ack": false,
+  "backup_state": "LOCAL_ONLY",
+  "task_id": "task-adversarial-coordination-validation-v1",
+  "artifact_refs": [
+    "/AI-Behaviour-Control-Lab-AgentBus/validators/ADVERSARIAL_VALIDATION_RESULT.md",
+    "/AI-Behaviour-Control-Lab-AgentBus/validators/validate_coordination_state.py"
+  ]
+}

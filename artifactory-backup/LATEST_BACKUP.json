@@ -1,15 +1,21 @@
 {
-  "schema": "ai-behaviour-control-lab/github-backup-pointer/v1",
+  "schema": "ai-behaviour-control-lab/github-backup-pointer/v2",
   "project_id": "ai-behaviour-control-lab",
   "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus",
   "github_role": "BACKUP_ONLY",
-  "snapshot_created_at_utc": "2026-10-03T23:07:30Z",
-  "message_cutoff_utc": "2026-10-03T23:07:10Z",
-  "message_cutoff_id": "msg-primary-package-set-v0.1.0-accepted-20261003t230710z",
+  "backup_mode": "FULL_PLUS_DELTA_CHAIN",
+  "latest_cutoff_utc": "2026-10-03T23:16:40Z",
+  "latest_cutoff_message_id": "msg-primary-adversarial-validation-pass-20261003t231640z",
+  "base_full_snapshot": {
+    "path": "artifactory-backup/snapshots/AI-Behaviour-Control-Lab-AgentBus-snapshot-20261003T230710Z.zip",
+    "sha256": "d79e626fda3f8957617eab0a8d7e14973757bdf847242eb728f18540fa6a06bc",
+    "cutoff_utc": "2026-10-03T23:07:10Z"
+  },
+  "latest_delta": {
+    "path": "artifactory-backup/deltas/20261003T231640Z/DELTA_MANIFEST.json",
+    "cutoff_utc": "2026-10-03T23:16:40Z"
+  },
   "protocol_version": "1.0.0",
   "package_set_version": "0.1.0",
-  "snapshot_path": "artifactory-backup/snapshots/AI-Behaviour-Control-Lab-AgentBus-snapshot-20261003T230710Z.zip",
-  "snapshot_sha256": "d79e626fda3f8957617eab0a8d7e14973757bdf847242eb728f18540fa6a06bc",
-  "backup_manifest_inside_snapshot": "BACKUP_MANIFEST.json",
-  "note": "Recovery backup only. Local Artifactory remains authoritative."
+  "note": "Recovery backup only. Restore full snapshot then apply deltas in order. Local Artifactory remains authoritative."
 }

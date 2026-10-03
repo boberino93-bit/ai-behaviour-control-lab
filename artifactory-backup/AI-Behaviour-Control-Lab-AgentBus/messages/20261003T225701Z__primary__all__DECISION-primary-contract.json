@@ -1,0 +1,17 @@
+{
+  "schema": "ai-behaviour-control-lab/agentbus-message/v1",
+  "id": "msg-primary-contract-20261003t225701z",
+  "timestamp_utc": "2026-10-03T22:57:01Z",
+  "project_id": "ai-behaviour-control-lab",
+  "from_agent": "primary",
+  "from_agent_instance_id": "primary-chatgpt-20261003T225700Z",
+  "to": ["all", "PRIMARY", "MANAGER", "RESEARCH"],
+  "kind": "DECISION",
+  "priority": "high",
+  "subject": "Adopt Intercommunications Enhancements Primary-agent hardening contract locally",
+  "body": "Primary retains architectural/release responsibility and integration authority; every spawned agent inherits project identity; routing and mutation fail closed on missing/conflicting project identity; cross-project access is deny-by-default; artifacts/tasks/locks are project-scoped; meaningful state changes are auditable; and changes affecting communication, bootstrap, schemas, roles or package behavior require impact analysis and synchronized PRIMARY/MANAGER/RESEARCH package updates before a coordinated release is declared complete.",
+  "status": "COMPLETED",
+  "correlation_id": "artifactory-bootstrap-20261003",
+  "requires_ack": false,
+  "backup_state": "LOCAL_ONLY"
+}

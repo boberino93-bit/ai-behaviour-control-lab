@@ -1,0 +1,53 @@
+{
+  "schema": "org-agent-mesh/project-manifest/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "project_name": "AI Behaviour Control Lab",
+  "canonical_artifactory_root": "/AI-Behaviour-Control-Lab-AgentBus",
+  "repository_identity": "boberino93-bit/ai-behaviour-control-lab",
+  "github_role": "BACKUP_ONLY",
+  "canonical_state_system": "LOCAL_ARTIFACTORY_LIBRARY",
+  "active_project_binding_required": true,
+  "cross_project_default": "DENY",
+  "roles": {
+    "PRIMARY": "project integration, accepted-state authority, project boundary enforcement, release coherence, backup authorization",
+    "MANAGER": "review, coordination, conflict detection, promotion recommendations",
+    "RESEARCH": "bounded evidence gathering and project-scoped findings"
+  },
+  "authoritative_sources": {
+    "project_manifest": "/AI-Behaviour-Control-Lab-AgentBus/PROJECT_MANIFEST.json",
+    "agent_registry": "/AI-Behaviour-Control-Lab-AgentBus/REGISTRY.json",
+    "message_log": "/AI-Behaviour-Control-Lab-AgentBus/messages/",
+    "task_registry": "/AI-Behaviour-Control-Lab-AgentBus/tasks/",
+    "artifact_index": "/AI-Behaviour-Control-Lab-AgentBus/artifacts/",
+    "decision_log": "/AI-Behaviour-Control-Lab-AgentBus/decisions/",
+    "package_registry": "/AI-Behaviour-Control-Lab-AgentBus/packages/",
+    "backup_receipts": "/AI-Behaviour-Control-Lab-AgentBus/backup/receipts/"
+  },
+  "backup_policy": {
+    "destination": "GitHub",
+    "repository": "boberino93-bit/ai-behaviour-control-lab",
+    "direction": "LOCAL_ARTIFACTORY_TO_GITHUB",
+    "github_may_author_state": false,
+    "local_persistence_required_before_backup": true,
+    "local_readback_required_before_backup": true,
+    "message_cutoff_required_in_backup_receipt": true
+  },
+  "instruction_provenance": {
+    "source": "local Library/Artifactory copy of the Intercommunications Enhancements primary hardening directive",
+    "local_source_artifact": "Pasted text(20261003-221521).txt",
+    "import_mode": "READ_ONLY",
+    "adopted_topics": [
+      "project isolation",
+      "message validation and fail-closed routing",
+      "artifact and repository isolation",
+      "task/lease/idempotency controls",
+      "Primary integration responsibility",
+      "role package synchronization",
+      "Artifactory hardening",
+      "message-board hardening",
+      "source-of-truth rules",
+      "atomic state changes",
+      "adversarial and concurrency testing"
+    ]
+  }
+}

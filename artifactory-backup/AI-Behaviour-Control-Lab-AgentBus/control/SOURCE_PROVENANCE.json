@@ -1,0 +1,20 @@
+{
+  "schema": "ai-behaviour-control-lab/source-provenance/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "source_project": "intercommunicationsenhancements",
+  "source_surface": "LOCAL_LIBRARY_ARTIFACTORY",
+  "source_artifact": "Pasted text(20261003-221521).txt",
+  "access": "READ_ONLY",
+  "sections_applied": [
+    "message validation and fail-closed routing",
+    "project/artifact/repository/task isolation",
+    "idempotency and duplicate handling",
+    "Primary responsibility",
+    "deployment package synchronization",
+    "Artifactory hardening",
+    "message-board hardening",
+    "source-of-truth and atomic-state rules",
+    "cross-project adversarial testing"
+  ],
+  "peer_project_mutation": false
+}

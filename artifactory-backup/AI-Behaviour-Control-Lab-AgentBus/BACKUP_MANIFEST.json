@@ -1,0 +1,23 @@
+{
+  "schema": "ai-behaviour-control-lab/github-backup-manifest/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus",
+  "source_system": "LOCAL_ARTIFACTORY_LIBRARY",
+  "destination_repository": "boberino93-bit/ai-behaviour-control-lab",
+  "message_cutoff_utc": "2026-10-03T22:57:02Z",
+  "message_cutoff_id": "msg-primary-github-backup-contract-20261003t225702z",
+  "github_is_canonical": false,
+  "files": [
+    {"path":"AGENT_DISCOVERY.json","sha256":"1a746e4c68c98e00ea00e80edd20e1635ad5e45b9877b380c1db7b81cd2b5920","bytes":573},
+    {"path":"BACKUP_POLICY.md","sha256":"78dfde916264834b3c1444eb23082808c9996752daee3313243f7de7cb8ca745","bytes":1329},
+    {"path":"BOOTSTRAP.md","sha256":"72f9f1ad566a4895ebfe9d82c464167357ecb0d8acfc639a9295a8f3d5193125","bytes":1334},
+    {"path":"PROJECT_MANIFEST.json","sha256":"47acaa368f00762414092610bc7f6b96008531b2f0f9d246eaf5a7a9e6bb0362","bytes":2427},
+    {"path":"PROTOCOL.md","sha256":"c945cae105804d20f88195c550f38baf69d0d0b978a254f74165a14d5f7411e0","bytes":2015},
+    {"path":"REGISTRY.json","sha256":"60a607fdff65c304ca86728ff1353355fe6d13b9f080d20a9dc1ef564c80c53f","bytes":1000},
+    {"path":"control/SOURCE_PROVENANCE.json","sha256":"f30cb242bd75daeeb05b560d3c6f5f86a8422f53fad561a330b5f0fc6db94695","bytes":717},
+    {"path":"messages/20261003T225700Z__primary__all__DECISION-local-artifactory-canonical.json","sha256":"dfc829e04b450819d26cc2e8de741682e955e4045dfa15bfa3ce2adb6123c27e","bytes":1003},
+    {"path":"messages/20261003T225701Z__primary__all__DECISION-primary-contract.json","sha256":"9c65369572280d04fd09201b43bf1b7375e695dde41af282fbcd7edf232ce406","bytes":1170},
+    {"path":"messages/20261003T225702Z__primary__all__DECISION-github-backup-contract.json","sha256":"9f0dd2afcc1099b67ac324609ef3e6197dbb80c3645339f0e6003bd3fb50fd09","bytes":1038},
+    {"path":"schemas/message.schema.json","sha256":"ef6eec29492d48ba247d5e77cba42a763fd69662eeb5c5926d8a44d7697affd7","bytes":1201}
+  ]
+}

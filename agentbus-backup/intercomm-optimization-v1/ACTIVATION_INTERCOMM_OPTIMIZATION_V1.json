@@ -1,0 +1,21 @@
+{
+  "schema": "org-agent-mesh/message/v2",
+  "kind": "SERVICE_CHECKPOINT",
+  "status": "ACTIVE",
+  "project_id": "ai-behaviour-control-lab",
+  "from": "primary-rollout",
+  "to": "all",
+  "timestamp_utc": "2026-10-04T00:12:30Z",
+  "subject": "Intercommunication optimization profile V1 activated",
+  "summary": "Activates split-plane coordination, 20% verified-capacity reserve, UNKNOWN fail-closed capacity, digest deduplication, coalesced writes, read-only sanitized peer capacity signaling, and local-first AgentBus backup semantics.",
+  "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus/control/INTERCOMM_OPTIMIZATION_PROFILE_V1.md",
+  "github_agentbus_role": "BACKUP_RECOVERY_MIRROR_ONLY",
+  "github_agentbus_is_canonical": false,
+  "source_repository_role": "NORMAL_PROJECT_VERSION_CONTROL",
+  "checksums_sha256": {
+    "INTERCOMM_OPTIMIZATION_PROFILE_V1.md": "cdb65fadcd95ceb0070000534660b9776db6982f3d486f3918e90f2f81fcf441",
+    "INTERCOMM_OPTIMIZATION_PROFILE_V1.json": "5b29220bca855c48b7f671d876d4e5c639310e5d36903bc0e52809d2e15df461"
+  },
+  "supersedes_conflicting_durable_heartbeat_requirements": "WHEN_CONFLICTING",
+  "notes": "Historical records remain immutable; this checkpoint changes active interpretation only."
+}

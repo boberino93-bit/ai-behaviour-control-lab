@@ -1,0 +1,11 @@
+{
+  "schema": "org-agent-mesh/intercomm-profile-pointer/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "active_profile_path": "/AI-Behaviour-Control-Lab-AgentBus/control/INTERCOMM_OPTIMIZATION_PROFILE_V1.json",
+  "profile_sha256": "5b29220bca855c48b7f671d876d4e5c639310e5d36903bc0e52809d2e15df461",
+  "effective_at": "2026-10-04T00:12:30Z",
+  "requires_bootstrap_read": true,
+  "github_agentbus_role": "BACKUP_RECOVERY_MIRROR_ONLY",
+  "source_repo_role": "NORMAL_PROJECT_VERSION_CONTROL",
+  "stale_profile_fail": "UNKNOWN_OR_BLOCKED"
+}

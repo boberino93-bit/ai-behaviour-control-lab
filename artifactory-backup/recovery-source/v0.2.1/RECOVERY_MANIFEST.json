@@ -1,0 +1,26 @@
+{
+  "schema": "ai-behaviour-control-lab/reproducible-recovery-source/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "authority": "NON_AUTHORITATIVE_RECOVERY_ONLY",
+  "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus",
+  "github_role": "BACKUP_ONLY",
+  "accepted_package_set": "0.2.1",
+  "accepted_protocol": "1.1.1",
+  "base_binary_snapshot": {
+    "git_commit": "7a14a7af54f0a1aaf1c3438c475a9894ae45eaac",
+    "path": "artifactory-backup/snapshots/ai-behaviour-control-lab-v0.2.0",
+    "package_set": "0.2.0"
+  },
+  "upgrade_recipe": {
+    "builder": "rebuild_v0.2.1.py",
+    "patches": "v0.2.1-patches.json",
+    "verification": "Builder must terminate successfully and all three resulting SHA-256 hashes must equal PACKAGE_REGISTRY.json before activation."
+  },
+  "expected_sha256": {
+    "PRIMARY": "cb2342dacc2d91ef41d164bfe3128ce8a148861b373e696bb730969a4d7e5284",
+    "MANAGER": "9de95f75d824c4024135d7f9b8e31381641dc5d1d0764ff0019cd107ebcc8046",
+    "RESEARCH": "e9f0dc8330492a6acd83459f2d2139b78fd6e0b7d01bd6cf1915c7ede76cdfda"
+  },
+  "local_reproduction_test": "PASS_3_OF_3_BYTE_EXACT",
+  "note": "The 0.2.1 accepted packages were reproduced byte-for-byte from the GitHub-backed 0.2.0 package baseline plus this text-only deterministic overlay."
+}

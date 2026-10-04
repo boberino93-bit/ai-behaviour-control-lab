@@ -1,0 +1,29 @@
+{
+  "schema": "ai-behaviour-control-lab/package-registry/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "package_set_version": "0.2.1",
+  "protocol_version": "1.1.1",
+  "status": "CURRENT",
+  "roles": {
+    "PRIMARY": {
+      "package_version": "0.2.1",
+      "archive_name": "ai-behaviour-control-lab-primary-agent-v0.2.1.zip",
+      "sha256": "cb2342dacc2d91ef41d164bfe3128ce8a148861b373e696bb730969a4d7e5284",
+      "manifest_path": "packages/primary/PACKAGE_MANIFEST.json"
+    },
+    "MANAGER": {
+      "package_version": "0.2.1",
+      "archive_name": "ai-behaviour-control-lab-manager-agent-v0.2.1.zip",
+      "sha256": "9de95f75d824c4024135d7f9b8e31381641dc5d1d0764ff0019cd107ebcc8046",
+      "manifest_path": "packages/manager/PACKAGE_MANIFEST.json"
+    },
+    "RESEARCH": {
+      "package_version": "0.2.1",
+      "archive_name": "ai-behaviour-control-lab-research-agent-v0.2.1.zip",
+      "sha256": "e9f0dc8330492a6acd83459f2d2139b78fd6e0b7d01bd6cf1915c7ede76cdfda",
+      "manifest_path": "packages/research/PACKAGE_MANIFEST.json"
+    }
+  },
+  "accepted_at_utc": "2026-10-03T23:31:00Z",
+  "accepted_by": "primary"
+}

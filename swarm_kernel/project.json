@@ -1,0 +1,20 @@
+{
+  "schema":"swarm-kernel/project/v1",
+  "kernel_version":"1.0.0",
+  "project_id":"ai-behaviour-control-lab",
+  "repository":"boberino93-bit/ai-behaviour-control-lab",
+  "canonical_branch":"main",
+  "coordination_root":"AI-Behaviour-Control-Lab-AgentBus",
+  "coordination_authority":"LOCAL_ARTIFACTORY_AGENTBUS_CANONICAL",
+  "github_artifactory_backup":"artifactory-backup/",
+  "github_agentbus_backup":"agentbus-backup/",
+  "github_backup_authority":"RECOVERY_ONLY",
+  "state_root":".swarm",
+  "foreign_write_policy":"DENY",
+  "cross_project_telemetry":"READ_ONLY",
+  "lease_ttl_seconds":1800,
+  "heartbeat_interval_seconds":300,
+  "circuit_breaker_threshold":3,
+  "manager_queue_soft_limit":8,
+  "manager_queue_hard_limit":15
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "org-agent-mesh/github-full-board-backup/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "canonical_root": "/AI-Behaviour-Control-Lab-AgentBus/messages",
+  "snapshot_utc": "2026-10-04T02:48:00Z",
+  "message_count": 20,
+  "archive_name": "AI_BEHAVIOUR_CONTROL_LAB_FULL_MESSAGE_BOARD_SNAPSHOT_20261004T0248Z.zip",
+  "archive_bytes": 19006,
+  "archive_sha256": "e0b4eb1fc44924427a499d0595e6f1eaf48bfabf4cf540d87429c8ae482fe44e",
+  "encoding": "base64-concatenated-parts",
+  "parts": [
+    {
+      "file": "part-0001-of-0001.b64",
+      "chars": 25344,
+      "sha256": "959e579fdc6c0798b810b762ef766181df384a9870f6e389029de0a7079285df"
+    }
+  ],
+  "restore": "Concatenate parts in filename order, base64-decode, then verify archive_sha256.",
+  "authority": "NON_AUTHORITATIVE_RECOVERY_ONLY"
+}

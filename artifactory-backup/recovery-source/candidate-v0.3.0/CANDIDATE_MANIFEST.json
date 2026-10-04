@@ -1,0 +1,20 @@
+{
+  "schema": "ai-behaviour-control-lab/candidate-recovery-source/v1",
+  "project_id": "ai-behaviour-control-lab",
+  "package_set_version": "0.3.0",
+  "status": "CANDIDATE_PENDING_MANAGER_REVIEW",
+  "authority": "NON_AUTHORITATIVE_RECOVERY_ONLY",
+  "canonical_source": "/AI-Behaviour-Control-Lab-AgentBus",
+  "github_role": "BACKUP_ONLY",
+  "protocol_domains": {
+    "COORDINATION_RUNTIME": "2.1.0",
+    "RESEARCH_GOVERNANCE": "1.1.1"
+  },
+  "expected_sha256": {
+    "PRIMARY": "1eac0518bd89a9b97f308f96b5aa6ad1437dfd9d6ea902211ffc3de70b2aa932",
+    "MANAGER": "f294d3a9a8268a849621ea15ee5d953af6c53ee893432af801fe27d1c5d15cc8",
+    "RESEARCH": "8a6d6d350b12708420de58ca434374a55ee9b4352da5ad0bca3c1d672056edda"
+  },
+  "local_reproduction_test": "PASS_3_OF_3_BYTE_EXACT",
+  "activation_rule": "Do not promote or activate this candidate from GitHub. Restore only as pending candidate evidence; independent Manager disposition and Primary acceptance are still required."
+}

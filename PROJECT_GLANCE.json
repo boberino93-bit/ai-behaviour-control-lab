@@ -1,0 +1,12 @@
+{
+  "schema":"org-agent-mesh/project-glance/v1",
+  "project_id":"ai-behaviour-control-lab",
+  "repository":"boberino93-bit/ai-behaviour-control-lab",
+  "observed_at_utc":"2026-10-07T13:10:00Z",
+  "status":"UNKNOWN",
+  "current_focus":"AI/agent behaviour, governance, coordination, control constraints, adversarial validation and bounded swarm experimentation.",
+  "blockers":["Current live role/work-unit state is not yet materialized into PROJECT_GLANCE.json from accepted AgentBus state."],
+  "next_action":"Refresh from the latest accepted AgentBus handoff on the next material research or manager transition.",
+  "last_material_change":"Internal scheduler binding was added to the dedicated AI behaviour/control repository.",
+  "evidence_refs":["AGENT_CONTEXT_REFERENCE.md","SWARM_OPERATIONS_OBSERVABILITY.json","bootstrap/INTERNAL_SCHEDULER_SERVICE.json"]
+}

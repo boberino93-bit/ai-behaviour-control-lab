@@ -1,0 +1,18 @@
+{
+  "description": "Load AI Behaviour Control Lab bootstrap context at session startup/resume/compaction.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${PLUGIN_ROOT}/hooks/session_start.py",
+            "statusMessage": "Loading AI Behaviour Control Lab bootstrap",
+            "additionalContextLimit": 3000
+          }
+        ]
+      }
+    ]
+  }
+}

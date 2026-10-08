@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ai-behaviour-control-lab-voice-bootstrap",
+  "version": "0.1.0",
+  "description": "Loads the AI Behaviour Control Lab bootstrap and safety context at supported session lifecycle boundaries.",
+  "skills": "./skills/",
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json",
+      "interface": {
+        "displayName": "AI Behaviour Control Lab Voice Bootstrap",
+        "shortDescription": "Recover project bootstrap context automatically at session start.",
+        "longDescription": "Local Work/Codex plugin for deterministic project bootstrap recovery at session startup, resume, clear, and compaction. It provides context continuity but never grants authentication or mutation authority.",
+        "developerName": "AI Behaviour Control Lab",
+        "category": "Productivity",
+        "capabilities": ["Read"]
+      }
+    }
+  }
+}

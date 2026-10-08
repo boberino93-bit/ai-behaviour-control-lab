@@ -1,0 +1,113 @@
+{
+  "schema": "ai-behaviour-control-lab/voice-bootstrap-connector/v1",
+  "version": "1.0.0-proposal",
+  "project_id": "ai-behaviour-control-lab",
+  "status": "PROPOSED_IMPLEMENTATION",
+  "purpose": "Load and verify the canonical project bootstrap automatically at the start of supported voice sessions without granting new authority.",
+  "canonical_bootstrap": "AGENT_BOOTSTRAP.json",
+  "activation_tiers": {
+    "custom_gpt_live": {
+      "guarantee": "DETERMINISTIC",
+      "trigger": "SESSION_CREATE",
+      "adapter": "inject verified VoiceBootstrapEnvelope into Live session instructions/history before user audio is processed"
+    },
+    "chatgpt_work_codex": {
+      "guarantee": "DETERMINISTIC_WHEN_TRUSTED_AND_SUPPORTED",
+      "trigger": "SessionStart",
+      "adapter": "trusted plugin lifecycle hook invokes shared envelope builder"
+    },
+    "chatgpt_voice_in_chat": {
+      "guarantee": "BEST_EFFORT",
+      "trigger": "FIRST_VOICE_TURN_OR_RELEVANT_PLUGIN_SELECTION",
+      "adapter": "plugin skill plus project/custom instructions; no claim of guaranteed platform lifecycle invocation"
+    }
+  },
+  "startup_sequence": [
+    "IDENTITY_RESOLUTION",
+    "BOOTSTRAP_FETCH",
+    "POLICY_FETCH",
+    "STATE_RECOVERY",
+    "INTEGRITY_CHECK",
+    "ENVELOPE_BUILD",
+    "SESSION_CONTEXT_INJECTION"
+  ],
+  "states": ["READY", "DEGRADED_READ_ONLY", "BLOCKED"],
+  "envelope": {
+    "schema": "ai-behaviour-control-lab/voice-bootstrap-envelope/v1",
+    "required_fields": [
+      "project_id",
+      "bootstrap_ref",
+      "bootstrap_sha",
+      "role",
+      "execution_mode",
+      "state_ref",
+      "principal_claim",
+      "authorization_case",
+      "mutation_authorization",
+      "bootstrap_state",
+      "loaded_at",
+      "policy_digest"
+    ],
+    "forbidden_payload_classes": [
+      "API_KEYS",
+      "RAW_AUTHENTICATION_PROOFS",
+      "PASSWORDS",
+      "UNNECESSARY_PERSONAL_INFORMATION"
+    ]
+  },
+  "security_invariants": {
+    "voice_transport_is_identity_proof": false,
+    "familiar_voice_is_authentication": false,
+    "device_possession_is_authentication": false,
+    "authentication_is_authorization": false,
+    "voice_open_creates_mutation_authority": false,
+    "authorization_cache_reuse": false,
+    "platform_approval_bypass": false,
+    "safe_read_only_continuation_when_permitted": true
+  },
+  "cache": {
+    "allowed": true,
+    "purpose": "latency reduction only",
+    "freshness_key_components": [
+      "project_id",
+      "agent_bootstrap_sha",
+      "authority_overlay_sha",
+      "active_state_revision"
+    ],
+    "authorization_case_reuse": "DENY",
+    "unverified_freshness_behavior": "DEGRADED_READ_ONLY"
+  },
+  "telemetry": {
+    "raw_speech_logging_default": false,
+    "events": [
+      "voice.bootstrap.started",
+      "voice.bootstrap.ready",
+      "voice.bootstrap.degraded",
+      "voice.bootstrap.blocked",
+      "voice.bootstrap.drift_detected"
+    ],
+    "fields": [
+      "session_correlation_id",
+      "activation_tier",
+      "bootstrap_sha",
+      "policy_digest",
+      "bootstrap_state",
+      "load_duration_ms",
+      "cache_status",
+      "failure_code"
+    ]
+  },
+  "success_behavior": {
+    "verbal_bootstrap_recitation": false,
+    "process_first_user_turn_normally": true,
+    "ask_user_to_repeat_recoverable_context": false
+  },
+  "sources_checked": {
+    "date": "2026-10-07",
+    "chatgpt_voice": "https://help.openai.com/en/articles/20001274-chatgpt-voice",
+    "chatgpt_plugins": "https://help.openai.com/en/articles/20001256-plugins-in-chatgpt",
+    "gpt_live_sessions": "https://developers.openai.com/api/docs/guides/live-conversations",
+    "plugin_hooks": "https://developers.openai.com/plugins/build/plugins",
+    "mcp_server": "https://developers.openai.com/plugins/build/mcp-server"
+  }
+}

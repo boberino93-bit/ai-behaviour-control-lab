@@ -1,0 +1,98 @@
+{
+  "backup_role": "BACKUP_ONLY_NON_CANONICAL",
+  "candidate": "UNIVERSAL_COMMUNICATION_BOOTSTRAP_V1_PHASE0_PHASE1",
+  "files": [
+    {
+      "bytes": 15089,
+      "path": "BENCHMARK_RESULT.json",
+      "sha256": "5c316d01e1f5b5084505fcecfb02d007419165a4c1356c32084f3f5a527d419d"
+    },
+    {
+      "bytes": 1526,
+      "path": "HYPOTHESIS_LATTICE.schema.json",
+      "sha256": "3eae912574e61890952e93d0ada80f1816d528b81d6f636aedb908db08e23e5d"
+    },
+    {
+      "bytes": 1504,
+      "path": "INTERVENTION_AUTHORIZATION.schema.json",
+      "sha256": "9fc8d6e2130b4ba97fd154b2cc2ad63ee3e1fe69d2e3136df7eb44756fd3bfbe"
+    },
+    {
+      "bytes": 1758,
+      "path": "README.md",
+      "sha256": "1fbea4c414787b62744b6e9700689b9e58b19b4c82639910951362a8edcac7de"
+    },
+    {
+      "bytes": 2393,
+      "path": "RED_TEAM_TEST_MATRIX.md",
+      "sha256": "94f4291e0992927712020821c11264ad68a3433b52c22c99b841c936016884d2"
+    },
+    {
+      "bytes": 2280,
+      "path": "SEMANTIC_PROMOTION_STATE_MACHINE.md",
+      "sha256": "b1bd1736dfafe03018c5409a424e4333f35cd708db5ff3c8283892836ec963fd"
+    },
+    {
+      "bytes": 3098,
+      "path": "SYNTHETIC_PROTOCOL_BENCHMARK_SPEC.md",
+      "sha256": "e1a3ed8d75576945f4ed3a04a39dd28abaf4d9732ddb6ac6c58cbe8854540dc0"
+    },
+    {
+      "bytes": 1179,
+      "path": "UCBP_SCHEMA.json",
+      "sha256": "ba1c2ddec7cc597e30827e2a42d95cc867d833c8a797eba52fc731b10befa491"
+    },
+    {
+      "bytes": 886,
+      "path": "run_benchmark.py",
+      "sha256": "5ace22d5b0e30f762229987b57d9f22fe648e21c0b78460ea27c69c90b855d97"
+    },
+    {
+      "bytes": 170,
+      "path": "src/ucbp/__init__.py",
+      "sha256": "0c63dd8b304b3aa6ed188cb4096a72cf4e7a1684594dc10c7ad03ec521b638a5"
+    },
+    {
+      "bytes": 1208,
+      "path": "src/ucbp/active_decoder.py",
+      "sha256": "625cdeef60d821d028394caa4697eb5e813a7f947c7480a78d67ee543ae622aa"
+    },
+    {
+      "bytes": 3082,
+      "path": "src/ucbp/evaluation.py",
+      "sha256": "47f18e9757fb5f5a5e7e91431d4f0db431bcd0fb024c6a6f9045c975908e1ebe"
+    },
+    {
+      "bytes": 1406,
+      "path": "src/ucbp/passive_decoder.py",
+      "sha256": "3749e166caecddb7ee710056e2ef4f967841aed0e0ff75787f23aeef5b32671d"
+    },
+    {
+      "bytes": 2729,
+      "path": "src/ucbp/synthetic_agents.py",
+      "sha256": "9a231ceae199c6d24919573cfe104b0b69da5f26ce486a25a33610e900cb62c3"
+    },
+    {
+      "bytes": 1740,
+      "path": "tests/test_benchmark.py",
+      "sha256": "ac373fbe19a199654af8db4193d439d2c5979073d917b589162229082c545930"
+    }
+  ],
+  "parent_research_commit": "a4eb06c5fb5b7f844ee3978f4da3bae9e2e111f4",
+  "schema": "ucbp/implementation-manifest/v1",
+  "status": "NON_CANONICAL_RESEARCH_CANDIDATE",
+  "validation": {
+    "reference_benchmark_sha256": "5c316d01e1f5b5084505fcecfb02d007419165a4c1356c32084f3f5a527d419d",
+    "reference_summary": {
+      "active_mean_accuracy": 0.9816666666666667,
+      "active_minus_passive": 0.02833333333333332,
+      "budget": 12,
+      "n_meanings": 6,
+      "noise": 0.1,
+      "passive_mean_accuracy": 0.9533333333333334,
+      "trials": 100,
+      "unauthorized_interventions": 0
+    },
+    "unit_tests": "6/6 PASS"
+  }
+}
